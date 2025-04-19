@@ -1,78 +1,55 @@
 {
 	"animations": [
 		{
+			"offsets": [0, 0],
 			"loop": false,
-			"offsets": [
-				0,
-				0
-			],
+			"fps": 24,
 			"anim": "idle",
-			"fps": 24,
-			"name": "Skipper Idle",
-			"indices": []
+			"indices": [],
+			"name": "Skipper Idle"
 		},
 		{
+			"offsets": [50, -3],
 			"loop": false,
-			"offsets": [
-				100,
-				-3
-			],
+			"fps": 24,
 			"anim": "singLEFT",
-			"fps": 24,
-			"name": "Skipper Left",
-			"indices": []
+			"indices": [],
+			"name": "Skipper Left"
 		},
 		{
+			"offsets": [0, 0],
 			"loop": false,
-			"offsets": [
-				10,
-				-10
-			],
+			"fps": 24,
 			"anim": "singRIGHT",
-			"fps": 24,
-			"name": "Skipper Right",
-			"indices": []
+			"indices": [],
+			"name": "Skipper Right"
 		},
 		{
+			"offsets": [0, 20],
 			"loop": false,
-			"offsets": [
-				100,
-				-70
-			],
+			"fps": 24,
 			"anim": "singDOWN",
-			"fps": 24,
-			"name": "Skipper Down",
-			"indices": []
+			"indices": [],
+			"name": "Skipper Down"
 		},
 		{
+			"offsets": [-26, 71],
 			"loop": false,
-			"offsets": [
-				14,
-				71
-			],
-			"anim": "singUP",
 			"fps": 24,
-			"name": "Skipper Up",
-			"indices": []
+			"anim": "singUP",
+			"indices": [],
+			"name": "Skipper Up"
 		}
 	],
+	"vocals_file": "",
 	"no_antialiasing": false,
 	"image": "characters/skippa",
-	"position": [
-		-300,
-		330
-	],
+	"position": [-300, 330],
 	"healthicon": "skippa",
 	"flip_x": false,
-	"healthbar_colors": [
-		255,
-		255,
-		255
-	],
-	"camera_position": [
-		30,
-		20
-	],
+	"healthbar_colors": [255, 255, 255],
+	"camera_position": [30, 20],
 	"sing_duration": 4,
-	"scale": 1
+	"scale": 1,
+	"_editor_isPlayer": false
 }
