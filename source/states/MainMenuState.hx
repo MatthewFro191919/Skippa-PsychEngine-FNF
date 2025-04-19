@@ -161,7 +161,6 @@ class MainMenuState extends MusicBeatState
 
 				if(distItem != -1 && selectedItem != menuItems.members[distItem])
 				{
-					curColumn = CENTER;
 					curSelected = distItem;
 					changeItem();
 				}
@@ -256,7 +255,6 @@ class MainMenuState extends MusicBeatState
 
 	function changeItem(change:Int = 0)
 	{
-		if(change != 0) curColumn = CENTER;
 		curSelected = FlxMath.wrap(curSelected + change, 0, optionShit.length - 1);
 		FlxG.sound.play(Paths.sound('scrollMenu'));
 
