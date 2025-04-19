@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="FNF_main_menu_assets.png">
+	<!-- Created with Adobe Animate version 21.0.8.42666 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="freeplay basic0000" x="1206" y="180" width="489" height="161"/>
+	<SubTexture name="freeplay white0000" x="12" y="351" width="653" height="215"/>
+
+</TextureAtlas>
