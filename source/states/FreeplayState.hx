@@ -103,6 +103,14 @@ class FreeplayState extends MusicBeatState
 		}
 		Mods.loadTopMod();
 
+		// LOAD MUSIC
+		if (FlxG.sound.music != null)
+		{
+			// kinda freaky tho
+			if (!FlxG.sound.music.playing)
+				FlxG.sound.playMusic(Paths.music('freakyMenu'));
+		}
+
 		bg = new FlxSprite().loadGraphic(Paths.image('menuBGBlue'));
 		bg.antialiasing = ClientPrefs.data.antialiasing;
 		add(bg);
@@ -517,12 +525,14 @@ class FreeplayState extends MusicBeatState
 
 	function changeSelection(change:Int = 0, playSound:Bool = true)
 	{
-		if (player.playingMusic)
-			return;
+		FlxG.sound.play(Paths.sound('scrollMenu'), 0.4);
+		FlxG.sound.playMusic(Paths.inst(songs[curSelected].songName), 0);
+		curSelected += change;
 
-		curSelected = FlxMath.wrap(curSelected + change, 0, songs.length-1);
-		_updateSongLastDifficulty();
-		if(playSound) FlxG.sound.play(Paths.sound('scrollMenu'), 0.4);
+		if (curSelected < 0)
+			curSelected = songs.length - 1;
+		if (curSelected >= songs.length)
+			curSelected = 0;
 
 		var newColor:Int = songs[curSelected].color;
 		if(newColor != intendedColor)
