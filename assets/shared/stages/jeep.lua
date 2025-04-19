@@ -18,35 +18,13 @@ function onCreate()
     setScrollFactor('tree', 1, 0)
     addLuaSprite('tree', false)
 
-    makeAnimatedLuaSprite('jeepskipper', 'Shitty_Jeep', -1000, 680)
-    addAnimationByPrefix('jeepskipper', 'idle', 'Shitty Jeep', 24, true)
-    addLuaSprite('jeepskipper', false)
-
     makeAnimatedLuaSprite('jeepskipperBetter', 'Better_Jeep', -1000, 680)
     addAnimationByPrefix('jeepskipperBetter', 'idle', 'Truck', 24, true)
     addLuaSprite('jeepskipperBetter', false)
-    setProperty('jeepskipperBetter.visible', false)
-
-    makeLuaSprite('kowalski', 'Kowalski', -300, 760)
-    addLuaSprite('kowalski', false)
-
-    makeLuaSprite('private', 'Private', -400, 760)
-    addLuaSprite('private', false)
-
-    makeLuaSprite('rico', 'Rico', -700, 760)
-    addLuaSprite('rico', false)
-
-    makeAnimatedLuaSprite('jeep', 'Shitty_Jeep', 200, 800)
-    addAnimationByPrefix('jeep', 'idle', 'Shitty Jeep', 24, true)
-    addLuaSprite('jeep', false)
 
     makeAnimatedLuaSprite('jeepBetter', 'Better_Jeep_BF', 200, 800)
     addAnimationByPrefix('jeepBetter', 'idle', 'Truck Low Quality', 24, true)
     addLuaSprite('jeepBetter', false)
-    setProperty('jeepBetter.visible', false)
-
-    makeLuaSprite('driver', 'Demon_Driver', 500, 850)
-    addLuaSprite('driver', false)
 end
 
 function onBeatHit()
