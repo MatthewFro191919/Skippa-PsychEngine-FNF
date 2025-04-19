@@ -1,0 +1,55 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [0, 0],
+			"anim": "idle",
+			"fps": 24,
+			"name": "Skipper Idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [50, -3],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "Skipper Left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [10, -10],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "Skipper Right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [10, 20],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "Skipper Down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-16, 71],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "Skipper Up",
+			"indices": []
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/EgoSkippa",
+	"position": [-300, 330],
+	"healthicon": "ego",
+	"flip_x": false,
+	"healthbar_colors": [0, 0, 0],
+	"camera_position": [30, 20],
+	"sing_duration": 4,
+	"scale": 1,
+	"_editor_isPlayer": false
+}
