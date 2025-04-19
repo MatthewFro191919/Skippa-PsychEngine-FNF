@@ -21,6 +21,8 @@ class MainMenuState extends MusicBeatState
 	var magenta:FlxSprite;
 	var camFollow:FlxObject;
 
+	var selectedItem:FlxSprite;
+
 	static var showOutdatedWarning:Bool = true;
 	override function create()
 	{
@@ -139,8 +141,6 @@ class MainMenuState extends MusicBeatState
 				allowMouse = false;
 				FlxG.mouse.visible = true;
 				timeNotMoving = 0;
-
-				var selectedItem:FlxSprite;
 			
 				var dist:Float = -1;
 				var distItem:Int = -1;
