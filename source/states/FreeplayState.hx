@@ -1,6 +1,5 @@
 package states;
 
-import backend.Paths;
 import backend.WeekData;
 import backend.Highscore;
 import backend.Song;
