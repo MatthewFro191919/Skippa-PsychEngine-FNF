@@ -23,6 +23,13 @@ class MainMenuState extends MusicBeatState
 
 	var selectedItem:FlxSprite;
 
+	var item:FlxSprite;
+	var option:String;
+
+	var selectedSomethin:Bool = false;
+
+	var timeNotMoving:Float = 0;
+	
 	static var showOutdatedWarning:Bool = true;
 	override function create()
 	{
@@ -119,9 +126,6 @@ class MainMenuState extends MusicBeatState
 		return menuItem;
 	}
 
-	var selectedSomethin:Bool = false;
-
-	var timeNotMoving:Float = 0;
 	override function update(elapsed:Float)
 	{
 		if (FlxG.sound.music.volume < 0.8)
@@ -187,9 +191,6 @@ class MainMenuState extends MusicBeatState
 
 				if (ClientPrefs.data.flashing)
 					FlxFlicker.flicker(magenta, 1.1, 0.15, false);
-
-				var item:FlxSprite;
-				var option:String;
 
 				FlxFlicker.flicker(item, 1, 0.06, false, false, function(flick:FlxFlicker)
 				{
