@@ -40,33 +40,6 @@ function onBeatHit()
     if curBeat == 144 or curBeat == 464 then
         doTweenZoom('camZoom1', 'camGame', 1.4, 3, 'quadInOut')
     end
-
-    if curBeat == 160 or curBeat == 480 then
-        crazy = true
-        setProperty('badsunset.visible', true)
-        setProperty('jeepBetter.visible', true)
-        setProperty('jeepskipperBetter.visible', true)
-        setProperty('jeep.visible', false)
-        setProperty('jeepskipper.visible', false)
-        setProperty('rico.visible', false)
-        setProperty('kowalski.visible', false)
-        setProperty('private.visible', false)
-        setProperty('driver.visible', false)
-    end
-
-    if curBeat == 288 or curBeat == 608 then
-        crazy = false
-        setProperty('badsunset.visible', false)
-        setProperty('defaultCamZoom', 0.9)
-        setProperty('jeepBetter.visible', false)
-        setProperty('jeepskipperBetter.visible', false)
-        setProperty('jeep.visible', true)
-        setProperty('jeepskipper.visible', true)
-        setProperty('rico.visible', true)
-        setProperty('kowalski.visible', true)
-        setProperty('private.visible', true)
-        setProperty('driver.visible', true)
-    end
 end
 
 function onUpdate()
