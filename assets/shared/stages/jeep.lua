@@ -33,6 +33,14 @@ function onBeatHit()
         doTweenX('treeTween', 'tree', 1900, 0.3, 'linear')
     end
 
+    if curBeat == 160 or curBeat == 480 then
+        crazy = true
+        setProperty('badsunset.visible', true)
+    end
+    if curBeat == 288 or curBeat == 608 then
+        crazy = false
+        setProperty('badsunset.visible', false)
+    end
     if crazy then
         doTweenZoom('camZoom', 'camGame', 1.7, 0.01, 'quadInOut')
     end
